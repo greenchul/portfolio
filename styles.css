@@ -176,7 +176,7 @@ li{
 
 .projects-table div{
     outline: .2rem solid black;
-    font-size: 1rem;
+    font-size: 0.5rem;
     padding: 0.5rem;
 }
 
@@ -260,6 +260,8 @@ footer{
     height: 2vh;
 }
 
+
+
 @media screen and (min-width: 768px) {
     header{
         height: 40vh;
@@ -268,7 +270,7 @@ footer{
         height: 55vh;
     }
     .projects-table div{
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
 }
@@ -279,6 +281,9 @@ footer{
     }
     #about-me{
         height: 50vh;
+    }
+    .projects-table div{
+        font-size: 2rem;
     }
 }
 
