@@ -4,12 +4,16 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html{
+    font-size: 62.5%;
+}
+
 header{
     background-color: #49a078;
     height: 60vh;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 20% 80%;
+    grid-template-rows: 15% 85%;
 }
 
 nav{
@@ -27,19 +31,21 @@ nav{
 
 nav a{
     color: black;
-    padding-right: 25px;
-    padding-left: 25px;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
     text-decoration: none;
+    font-size: 2rem;
   }
 
 nav a:hover{
     color: #dce1de;
+    
 }
 
 header img{
     border-radius: 50%;
-    max-width:80%;
-    max-height:80%;
+    max-width:60%;
+    max-height:60%;
     padding: 20% 20%;
 }
 
@@ -50,16 +56,19 @@ header img{
 }
 
 .main-header h1{
-    font-size: 96px;
+    /* font-size: 9.6rem; */
+    font-size: 4.5rem;
 }
 
 .main-header h2{
-    font-size: 48px;
+    /* font-size: 4.8rem; */
+    font-size: 3rem;
     
 }
 
 .image-header{
     margin: 0 auto;
+    align-self: center;
    
 }
 
@@ -70,15 +79,26 @@ header img{
     align-items: center;
     justify-content: center;
     
+    
+}
+
+#about-me h3{
+    font-size: 2rem;
+}
+
+#about-me p{
+    font-size: 1.2rem;
 }
 
 #collage{
     margin: 0 auto;
-    
+    padding-top: 10%;
     width: 80%;
     display: grid;
     grid-template-rows: 50% 50%;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem 1rem;
+    height: 30rem;
 }
 
 figcaption{
@@ -91,4 +111,130 @@ figcaption{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+#collage img:hover{
+    box-shadow: .3rem .3rem .3rem black
+}
+
+#collage div{
+    background-color: #216869;
+    text-align: center;
+    
+}
+
+li{
+    list-style-position: inside;
+}
+
+
+
+#projects{
+    /* border: 2px solid pink; */
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10rem;
+}
+
+#projects h3{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.projects-table{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.2rem;
+    
+}
+
+.projects-table img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.projects-table div{
+    outline: .2rem solid black;
+}
+
+#contact{
+    width:40%;
+    margin: 0 auto;
+    margin-top: 10rem;
+}
+
+#contact h3{
+    font-size: 2rem;
+    text-align: center;
+}
+
+fieldset{
+    background-color: #49a078;
+    border: none;
+}
+
+legend{
+    font-size: 1.5rem;
+    padding-top: 1.5rem;
+    
+
+}
+
+#contact input[type="text"]{
+    border-radius: .5rem;
+    width: 50%;
+    font-size: 1rem;
+    padding: 0.2rem;
+    margin: .5rem;
+}
+#contact input[type="email"]{
+    border-radius: .5rem;
+    width: 50%;
+    font-size: 1rem;
+    padding: 0.2rem;
+    margin: .5rem;
+}
+
+textarea{
+    border-radius: .5rem;
+    width: 50%;
+    font-size: 1rem;
+    padding: 0.2rem;
+    margin: .5rem;
+}
+
+input[type="submit"]{
+    border-radius: .5rem;
+    width: 50%;
+    font-size: 1rem;
+    padding: 0.2rem;
+    margin: .5rem;
+}
+
+@media screen and (min-width: 768px) {
+    html{
+        font-size: 70%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    html{
+        font-size: 80%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    html{
+        font-size: 85%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    html{
+        font-size: 140%;
+    }
+    nav a{
+        /* font-size: 1.2rem; */
+    }
 }
